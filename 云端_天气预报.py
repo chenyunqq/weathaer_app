@@ -1,9 +1,14 @@
 import streamlit as st
 import requests
-
+hide_streamlit_style = """
+<style>
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # 设置页面标题和布局（适配移动端）
 st.set_page_config(page_title="天气查询", layout="wide")
-st.title("🌤️ 手机可用的天气查询工具")
+st.title("🌤️ 天气查询工具")
 
 # 输入城市名
 city = st.text_input("请输入城市名（如：北京）", placeholder="例如：上海")
