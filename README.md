@@ -1,2 +1,2 @@
-# weathaer_app
+# weathear_app
 nothing
